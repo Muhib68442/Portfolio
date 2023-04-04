@@ -1,0 +1,799 @@
+/*
+Md. Muhibbur Rahman | Portfolio
+CSS v4.0.1
+Last Updated : 4/4/2023 | 8.00 PM
+*/
+
+
+@media screen and (min-width : 992px) {
+
+    /*********PC DESIGN*********/
+    .redirection-home {
+        display: none;
+    }
+
+    /******* SIDEBAR *******/
+    .sidebar {
+        background-color: #171717;
+        width: 15%;
+        height: 100vh;
+        position: fixed;
+    }
+
+    .sidebar img {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 27px;
+        margin-bottom: 27px;
+    }
+
+    .sidebar-title {
+        font-size: 18px;
+        padding: 0px;
+        text-align: center;
+        color: white;
+        font-family: Inter;
+        transition: 0.2s;
+    }
+
+    .sidebar-title:hover {
+        color: #1176ff;
+        font-weight: bolder;
+        border-left: 3px solid #0b70ff;
+        margin-left: 12px;
+    }
+
+    .title {
+        font-size: 35px !important;
+    }
+
+    /*SIDEBAR OPTION*/
+    .section-option-ul {
+        margin-top: 30px;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .section-option {
+        background-color: #222222;
+        text-align: center;
+        border: blue;
+        padding: 15px;
+        margin: 5px;
+        margin-bottom: 20px;
+        transition: 0.1s;
+    }
+
+    .section-option-link {
+        color: white;
+        text-decoration: none;
+        font-family: Roboto;
+        transition: 0.1s;
+    }
+
+    .section-option-link:target {
+        background-color: #1176ff;
+    }
+
+    .section-option:hover {
+        background-color: #111111;
+        transition: 0.1s;
+        color: #1176ff;
+        font-weight: bolder;
+        font-size: 20px;
+        border-left: 3px solid #1176ff;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+
+    .section-option:hover .section-option-link {
+        color: #373737;
+        font-weight: bolder;
+    }
+
+    .sidebar-dim-text {
+        color: #777777;
+        font-family: monospace;
+        font-size: 17px;
+        padding-top: 15px;
+        padding: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+
+    .sidebar-dim-text:hover {
+        color: #1176ff;
+        font-weight: bolder;
+        border-left: 3px solid #0b70ff;
+        margin-left: 12px;
+    }
+
+    /********** CONTENT SECTION **********/
+    .content-section {
+        width: 85%;
+        display: block;
+        float: right;
+        background-color: #000000;
+        padding-bottom: 70px;
+    }
+
+    /******* Section : HOME ******/
+    .home {
+        background-image: url('../res/animate-cover/redirect-cover-pc-0.jpg');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        animation: fading 2s ease-in-out infinite;
+        height: 100vh;
+    }
+
+    @keyframes fading {
+        0% {
+            background-image: url('../res/animate-cover/redirect-cover-pc-0.jpg');
+        }
+
+        50% {
+            background-image: url('../res/animate-cover/redirect-cover-pc-100.jpg');
+        }
+
+        100% {
+            background-image: url('../res/animate-cover/redirect-cover-pc-0.jpg');
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text {
+        transform: translate(6%, 70%) !important;
+        margin-left: 70px;
+        margin-top: 70px;
+        /* margin-top: -210px; */
+        color: #ffffff;
+        font-size: 35px;
+        font-family: Roboto;
+        line-height: 40px;
+        word-spacing: 4px;
+    }
+
+    #level {
+        color: #707070;
+        font-size: 25px;
+        transition: 0.2s;
+    }
+
+    #level:hover {
+        color: #1176ff;
+        transition: 0.2s;
+        border-left: 2px solid #1176ff;
+        padding-left: 20px;
+    }
+
+    .ending {
+        background-color: #171717;
+        /* height: 10vh; */
+        text-align: center;
+        font-family: Roboto;
+        color: White;
+        padding: 10px;
+    }
+
+    /*Home END*/
+
+    /******* Section : ABOUT ******/
+    .about {
+        background-color: #000000;
+    }
+
+    .about-container {
+        width: 70%;
+        margin: 20px auto;
+    }
+
+    .wrapper {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .image img {
+        width: 100%;
+        margin-top: -230px;
+        margin-left: 15px;
+        /* position: static; */
+    }
+
+    .design {
+        background-color: #1176ff;
+        height: 245px;
+    }
+
+    .name {
+        font-family: Inter;
+        margin-bottom: 40px;
+        margin-left: 30px;
+        font-size: 30px;
+        color: white;
+        transition: 0.2s;
+
+    }
+
+    .name:hover {
+        color: #1176ff;
+        border-left: 4px solid #1176ff;
+        transition: 0.2s;
+        padding-left: 10px;
+        font-weight: 700;
+    }
+
+    .description {
+        color: white;
+        font-size: 22px;
+        line-height: 31px;
+        word-spacing: 3px;
+        font-family: Roboto;
+        margin-top: 20px;
+    }
+
+    .topic {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .topic h3 {
+        color: #1176ff;
+        font-size: 25px;
+        font-family: Roboto;
+    }
+
+    .topic p {
+        color: aliceblue;
+        font-size: 25px;
+        font-family: Roboto;
+    }
+
+
+    /*About END*/
+
+    /******* Section : PROJECTS ******/
+    .projects {
+        background-color: #000000;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .project-container {
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    .project {
+        background-color: #222222;
+        border-radius: 15px;
+        width: 40%;
+        margin-left: 30px;
+        transition: 0.1s;
+        transition: 0.2s;
+    }
+
+    .project:hover {
+        box-shadow: 0px 0px 15px 5px #1174ff88;
+        transition: 0.2s;
+        /* box-shadow: 1px 1px 30px 4px rgba(17,118,255,0.75);
+        -webkit-box-shadow: 1px 1px 30px 4px rgba(17,118,255,0.75);
+        -moz-box-shadow: 1px 1px 30px 4px rgba(17,118,255,0.75); */
+        border-bottom: 4px solid #1176ff;
+        background-color: #111111;
+    }
+
+    .project img {
+        width: 100%;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .project h3 {
+        font-size: 25px;
+        color: white;
+        font-family: Roboto;
+        text-align: center;
+        margin: 7px;
+    }
+
+    .project p {
+        color: #999999;
+        padding: 5px 10px;
+        font-family: Roboto;
+        font-weight: bolder;
+        margin: 5px;
+    }
+
+    .project-link {
+        text-decoration: none;
+    }
+
+    /*Projects END*/
+
+    /******* Section : SKILLS ******/
+    .skills {
+        padding: 10px 0px;
+        background-color: #000000;
+    }
+
+    .side-wrapper {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        color: #ffffff;
+    }
+
+    .side {
+        width: 47%;
+    }
+
+    .skill-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .skill-topic-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        /* margin: 0 auto; */
+
+    }
+
+    .skill-topic-name {
+        font-size: 25px;
+        font-family: Roboto;
+        letter-spacing: 3px;
+    }
+
+    .heading {
+        color: #1176ff;
+        font-size: 30px;
+        text-align: center;
+        font-family: Roboto;
+    }
+
+    .wrapper-skills {
+        width: 70%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .skill-logo-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32%;
+        height: 80px;
+        background-color: #222222;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+    .skill-logo-bg:hover {
+        background-color: #1176ff;
+        border-bottom: 4px solid #1176ff;
+        background-color: #111111;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .skill-topic-img {
+        padding: 15px;
+        width: 100%;
+        height: 80px;
+        transition: 0.4s;
+        /* height: 80%; */
+        fill: #1176ff !important;
+    }
+
+    /*Progress & Animation (Skills)*/
+    .progress-bar {
+        width: 70%;
+        margin-left: 20px;
+        height: 10px;
+        background-color: #373737 !important;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .progress-anim {
+        width: 0%;
+        height: 10px;
+        background-color: #1176ff !important;
+        border-radius: 10px;
+        animation: loading 1s ease-in-out forwards;
+        /* animation-iteration-count: infinite; */
+    }
+
+    .progress-anim.start-animation {
+        animation-play-state: running !important;
+    }
+
+    #progress1 {
+        animation-delay: 0s;
+        animation-name: loading1;
+        animation-play-state: running !important;
+
+    }
+
+    #progress2 {
+        animation-delay: 0.1s;
+        animation-name: loading2;
+    }
+
+    #progress3 {
+        animation-delay: 0.2s;
+        animation-name: loading3;
+    }
+
+    #progress4 {
+        animation-delay: 0.2s;
+        animation-name: loading4;
+    }
+
+    #progress5 {
+        animation-delay: 0.3s;
+        animation-name: loading5;
+    }
+
+    #progress6 {
+        animation-delay: 0.3s;
+        animation-name: loading6;
+    }
+
+    #progress7 {
+        animation-delay: 0.2s;
+        animation-name: loading7;
+    }
+
+    #progress8 {
+        animation-delay: 0.1s;
+        animation-name: loading8;
+    }
+
+    @keyframes loading1 {
+        to {
+            width: 90%;
+        }
+    }
+
+    @keyframes loading2 {
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes loading3 {
+        to {
+            width: 50%;
+        }
+    }
+
+    @keyframes loading4 {
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes loading5 {
+        to {
+            width: 60%;
+        }
+    }
+
+    @keyframes loading6 {
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes loading7 {
+        to {
+            width: 70%;
+        }
+    }
+
+    @keyframes loading8 {
+        to {
+            width: 50%;
+        }
+    }
+
+    /*Skills END*/
+
+    /******* Section : CONTACT ME ******/
+    .contact {
+        background-color: #000000;
+        padding-top: 0px;
+    }
+
+    .main-wrapper {
+        padding-top: 10px;
+        margin: 0 auto;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+    /*Form*/
+    .container-form {
+        margin-left: 20px;
+    }
+
+    .container-form form label {
+        color: white;
+        font-size: 27px;
+        font-family: Roboto;
+        margin-right: 30px;
+    }
+
+    .container-form form input {
+        border: none;
+        border-bottom: 2px solid #1176ff;
+        background-color: #000000;
+        /* padding: 13px 100px; */
+        width: 58%;
+        padding: 10px 10px;
+        margin: 30px 0px;
+        color: #1176ff;
+        /* border-radius: 20px; */
+        transition: 0.2s;
+        padding-left: 20px;
+    }
+
+    .container-form form input:hover {
+        /* border: 3px solid #333333; */
+        border-bottom: 4px solid #1176ff;
+    }
+
+    .container-form form input:focus {
+        background-color: #171717;
+        border: 3px solid #333333;
+    }
+
+    .msgbox {
+        border: none !important;
+        border-left: 2px solid #1176ff !important;
+        padding: 10px;
+        color: #1176ff;
+        font-size: 25px;
+        padding-left: 40px;
+        transition: 0.2s;
+    }
+
+    .msgbox:hover {
+        /* border: 3px solid #333333 !important; */
+        border-left: 4px solid #1176ff !important;
+        transition: 0.2s;
+    }
+
+    #message {
+        width: 80%;
+        height: 280px;
+    }
+
+    .button {
+        padding: 10px 23px;
+        background-color: #000000;
+        border: none;
+        border-bottom: 3px solid #1176ff;
+        color: white;
+        font-family: monospace;
+        margin-left: 60px;
+        transition: 0.2s;
+    }
+
+    .button:hover {
+        border: 3px solid #333333;
+        color: #1176ff;
+        transition: 0.2s;
+        border-bottom-color: #1176ff;
+    }
+
+    #reset-btn:hover {
+        color: #f65050;
+        transition: 0.2s;
+        border-bottom-color: #f65050;
+    }
+
+    .icon-name-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*Handle*/
+    .handle-link-div {
+        padding: 5px 10px;
+        background-color: #222222;
+        margin: 0;
+        transform: 0.2s;
+    }
+
+    .handle-link-div:hover {
+        background-color: #111111;
+        transform: 0.2s;
+    }
+
+    .handle-link {
+        text-decoration: none;
+        font-family: monospace;
+        font-size: 17px;
+    }
+
+    .handle-link:hover {
+        font-weight: 700;
+
+    }
+
+    .handle-topic-name {
+        color: white;
+        font-family: Roboto;
+    }
+
+    .handle-logo-bg {
+        width: 20%;
+        background-color: #222222;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+    .handle-logo-bg:hover {
+        /* background-color: #333333;*/
+        background-color: #1176ff;
+        border-bottom: 4px solid #1176ff;
+        background-color: #111111;
+        border-radius: 0px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    .handle-topic-img {
+        padding: 15px;
+        display: block;
+        fill: #1176ff !important;
+    }
+
+    .handle-topic-img:hover {
+        fill: #0b70ff !important;
+    }
+
+    /*Contact END*/
+}
+
+/***Ending of PC CSS***/
+
+
+/********** REDIRECTION SECTION CSS (SCREEN Smartphone)**********/
+@media screen and (max-width : 992px) {
+
+    /*Disable Contents*/
+    .sidebar,
+    .content-section {
+        display: none;
+    }
+
+    /*Redirection Page*/
+    .redirection-home {
+        font-family: Inter;
+        height: 95vh;
+        background-image: url("../res/animate-cover/redirect-cover-mobile-0.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        /* overflow: none; */
+        animation: fading 2s ease-in-out infinite;
+    }
+
+    .R-intro-text {
+        color: white;
+        width: 80%;
+        display: block;
+        transform: translate(40px, 200px);
+    }
+
+    .R-resize-text {
+        color: #444444;
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+
+    .explore-btn-div {
+        margin-top: 40px;
+    }
+
+    .explore-btn-div a {
+        border: 3px solid #569dff;
+        /* #f65050; */
+        padding: 10px 30px;
+        text-decoration: none;
+        color: White;
+        transition: 0.4s;
+    }
+
+    .explore-btn-div a:hover {
+        color: #1176ff;
+        border: 3px solid #373737;
+    }
+
+    #dim-text {
+        color: #777777;
+    }
+
+    @keyframes fading {
+        0% {
+            background-image: url('../res/animate-cover/redirect-cover-mobile-0.jpg');
+        }
+
+        50% {
+            background-image: url('../res/animate-cover/redirect-cover-mobile-100.jpg');
+        }
+
+        100% {
+            background-image: url('../res/animate-cover/redirect-cover-mobile-0.jpg');
+        }
+    }
+
+}
+
+
+/*REDIRECTION SECTION SCREEN Small 320px*/
+@media screen and (max-width : 320px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .redirection-home {
+        height: 100vh;
+    }
+
+    .R-intro-text h3 {
+        font-size: 18px;
+    }
+
+    #dim-text {
+        color: #777777;
+    }
+
+}
