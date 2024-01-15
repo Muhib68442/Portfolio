@@ -1,453 +1,311 @@
 <!DOCTYPE html>
-<!--
-        Md. Muhibbur Rahman | Portfolio 
-        ver : 4.0.1
-        Last Updated : 4/4/2023 | 8.00PM
-        Project by ©Muhib
--->
 <html lang="en">
 <head>
+    <!-- Meta (Charset, Viewport, Meta) -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Md. Muhibbur Rahman">
-    <meta name="description" content="Portfolio of Md. Muhibbur Rahman">
-    <link rel="shortcut icon" href= "favicon.png" type="image/x-icon">
-    <title>Md. Muhibbur Rahman | Portfolio</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/universal.css">
-    <!--Bootstrap (Offline)-->
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta (Info) -->
+    <meta name="author" content="Md. Muhibur Rahman">
+    <meta name="keywords" content="Md. Muhibur Rahman, Muhib, Portfolio">
+    <meta name="description" content="Portfolio & Project Showcase of Md. Muhibbur Rahman">
+    <link rel="shortcut icon" href="res/img/micon.png" type="image/x-icon">
+
+    <!-- Meta (Open Graph - Social Sharing) -->
+    <meta property="og:title" content="Md. Muhibbur Rahman - Portfolio">
+    <meta property="og:description" content="Personal Portfolio of Md. Muhibbur Rahman">
+    <meta property="og:url" content="https://muhib68442.github.io/Portfolio/">
+    <meta property="og:image" content="res/img/micon.png">
+    <meta property="og:type" content="website">
+
+    <!-- Meta (Favicon, Theme) -->
+    <link rel="icon" href="res/img/micon.png" type="image/x-icon">
+    <meta name="theme-color" content="#171717">
+    <title>Md. Muhibur Rahman | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="res/css/mcss.css">
+    <link rel="stylesheet" href="res/css/main.css">
+    <link rel="stylesheet" href="res/css/mobile.css" media="only screen and (max-width: 767px)">
 </head>
 <body>
-
-    <!------------SideBar---------->
-    <section class="sidebar">
-        <img src="res/micon.png" alt="M-Icon">
-        <h3 class="sidebar-title">Md. Muhibbur Rahman</h3>
-        
-        <ul class="section-option-ul">
-            <a class="section-option-link" href="#home"><li class="section-option home-li">Home</li></a>
-            <a class="section-option-link " href="#about"><li class="section-option about-li">About Me</li></a>
-            <a class="section-option-link" href="#project"><li class="section-option projects-li">Projects</li></a>
-            <a class="section-option-link" href="#skills"><li class="section-option skills-li">Skills</li></a>
-            <a class="section-option-link" href="#contact"><li class="section-option contact-li">Contact Me</li></a>
-        </ul>
-       
-        <!-- <p style="font-family:monospace; color: aliceblue; "> &copy;Muhib</p> -->
-        <a href="mailto:muhib2929@gmail.com" class="sidebar-dim-text"><i class="far fa-envelope"></i> muhib2929@gmail.com</a>
-
-    </section>
-    <!------------SideBar ENDS---------->
-
-    <!------------Contents---------->
-    <section class="content-section">
-
-        <!------------Home---------->
-        <section class="home" id="home">
-            <div class="container">
-                <div class="content">
-                    <div class="text">
-                        <p>Hi</p>
-                        <p>Myself Muhib</p>
-                        <p>Frontend Web Designer</p>
-                        <p>and Beginner Programmer</p>
-                        
-                        <p id="level">CSE Student | Frontend | Beginner</p>
     
-                        <!-- <button><a href="../../index.html" target="iframex">About Me</a></button> -->
-                    </div>
-                </div>
-        </section>
-        <!------------Home ENDS---------->
+    <!-- BG -->
+    <section class="home" id="home"></section>
+        
+    <!-- Contents -->
+    <div class="page-content scrollable">
 
-        <!------------About---------->
-        <section class="about" id="about">
-            <div class="section-title">
-                <h3 class="title">About Me</h3>
-                <hr class="dotted-hr">
+        <!-- Header -->
+        <header>
+            <div class="branding-section">
+                <div class="header-logo">
+                    <img src="res/img/micon.png" alt="M-Icon">
+                </div>
+                <div class="header-title">
+                    <h1>Md. Muhibur Rahman</h1>
+                    <!-- Hope nam er age Engr. boshbe oneday... -->
+                </div>
             </div>
-            <div class="about-container">
-                <div class="wrapper">
-                    <div class="image">
-                        <div class="design"></div>
-                        <img src="res/Muhib.jpeg" alt="Muhib-Profile">
-                    </div>
+    
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    
+            <div class="header-btn-container">
+                <!-- <a href="#" class="btnX"></a> -->
+            </div>
+        </header>
+        
+
+        <!-- Intro -->
+        <section class="intro-container">
+            <h3>Hi</h3>
+            <h3>I'm <span>Md. Muhibbur Rahman</span></h3>
+            <p>CSE Student | Web Developer | Learner</p>
+            <div class="">
+                <a href="#about" class="btn">About Me</a>
+                <a href="data/files/muhib_cv.pdf" target="_blank" class="btnX">CV</a>
+            </div>
+        </section>
+
+        <hr class="distance">
+
+        <!-- About Me -->
+        <section class="about-container" id="about">
+            <h3 class="about-heading g-heading">About Me</h3>
+           
+            <div class="about-wrapper">
+                <img src="res/img/profile-muhib.jpeg" alt="profile-muhib">
+                <div class="about-text-container">
                     <h3 class="name">Md. Muhibbur Rahman</h3>
+                    <p class="name-line text-p">CSE Student | Web Developer | Learner</p>
+                    
+                    <p class="text-p desc">Hello ! Myself Muhib. I'm not that professional web developer, but I love coding. So I like to try something new with programming languages. And I've gained much knowledge about it. It looks very interesting ! I'm Excited ! I would inspire if you like my builds and created projects. Thanks.</p>
+
+                    <div class="twoline-container">
+
+                        <div class="twoline-box">
+                            <p class="title">Experience of</p>
+                            <p class="subtitle">4 Years</p>
+                        </div>
+    
+                        <div class="twoline-box">
+                            <p class="title">Currently on</p>
+                            <p class="subtitle">Studying CSE</p>
+                        </div>
+
+                        <div class="twoline-box">
+                            <p class="title">Wish to be</p>
+                            <p class="subtitle">A Developer</p>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <!-- <a href="#" class="btnX">Download CV</a> -->
+                    </div>
                 </div>
-                <p class="description">Hello ! Myself Muhib. I'm not that professional web developer, but I love coding. So I like to try something new with programming languages. And I've gained much knowledge about it. It looks very interesting ! I'm Excited ! I would inspire if you like my builds and created projects. Thanks.</p>
-                
-                <div class="wrapper">
-                    <div class="topic">
-                        <h3>Level</h3>
-                        <p>Front-End</p>
-                    </div>
-                    <div class="topic">
-                        <h3>Started Journey</h3>
-                        <p>From 2021</p>
-                    </div>
-                    <div class="topic">
-                        <h3>Wish to be</h3>
-                        <p>A Developer</p>
-                    </div>
-                </div>
             </div>
-            
-        </section>
-        <!------------About ENDS---------->
-
-        <!------------Projects---------->
-        <section class="projects" id="project">
-            <div class="section-title">
-                <h3 class="title">Projects</h3>
-                <hr class="dotted-hr">
-            </div>
-          
-            <div class="works-container">
-
-                <a href="https://muhib68442.github.io/IMS-Showcase/pages/project-details.html?project=0" target="_blank" class="work">
-                    <img class="work-img" src="res/proj-thumb/ims_lab.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">Lab Inventory Management System</h3>
-                        <p class="work-desc ">Manage your Laboratory Inventory and Track all Items at ease </p>
-                    </div>
-                </a>
-
-                <a href="https://muhib68442.github.io/Muhib-Photography/index.html" target="_blank" class="work">
-                    <img class="work-img" src="res/proj-thumb/muhib-photography.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">Muhib Photography</h3>
-                        <p class="work-desc ">My Photography Display SIte</p>
-                    </div>
-                </a>
-
-                <a href="https://ukiit.netlify.app/" target="_blank" class="work">
-                    <img class="work-img" src="res/proj-thumb/utility-toolkit-thumb.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">UKiit</h3>
-                        <p class="work-desc ">Simplify your life with UKiit’s Utility Toolkit</p>
-                    </div>
-                </a>
-
-                <a href="https://muhib68442.github.io/ProjectC/" target="_blank" class="work">
-                    <img class="work-img" src="res/proj-thumb/projectc.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">Project C</h3>
-                        <p class="work-desc ">Simple Programs with C Programing </p>
-                    </div>
-                </a>
-
-                <a href="http://todomuhib.42web.io/" target="_blank" class="work">
-                    <img class="work-img" src="res/proj-thumb/todo.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">To Do</h3>
-                        <p class="work-desc ">Organize your all task with To Do</p>
-                    </div>
-                </a>
-
-                <a onclick="alert('Soon ! Stay Tuned')" class="work concept">
-                    <img class="work-img" src="res/proj-thumb/portfolio_x-concept.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">On the Way___</h3>
-                        <p class="work-desc ">Almost Complete ! We'll charm you soon !</p>
-                    </div>
-                </a>
-
-                <a onclick="alert('Soon ! Stay Tuned')" class="work concept">
-                    <img class="work-img" src="res/proj-thumb/furnmart-concept.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">On the Way...</h3>
-                        <p class="work-desc ">Something big ! Stay Tuned...</p>
-                    </div>
-                </a>
-
-                <a onclick="alert('Soon ! Stay Tuned')" class="work concept">
-                    <img class="work-img" src="res/proj-thumb/muhib-photography.jpg" alt="work-thumbnail">
-                    <div class="work-text-container">
-                        <h3 class="work-name ">Woah ! Great Concept</h3>
-                        <p class="work-desc ">Project idea was great. We'll start working on it soon !</p>
-                    </div>
-                </a>
-
-                
-            </div>
-
-
            
         </section>
-        <!------------Projects ENDS---------->
 
-        <!------------Skills---------->
-        <section class="skills" id="skills">
-            <div class="section-title">
-                <h3 class="title">Skills</h3>
-                <hr class="dotted-hr">
+        <hr class="distance">
+
+        <!-- Projects -->
+        <section class="project-container" id="project">
+            <h3 class="g-heading">Projects</h3>
+            <div class="projects" id="projectsContainer">
+                
+                <!-- Projects Dynamically Loads Here -->
+
             </div>
-            <div class="side-wrapper">
-    
-                <div class="side">
-                    <h3 class="heading">Web Design</h3>
-        
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper" id="skill-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">HTML</h3>
-                        </div>
-                        <!-- <progress value="80" max="100"></progress> -->
-    
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress1"></div>
-                        </div>                      
-    
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper" id="skill-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zM257 255c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">CSS</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress2"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper" id="skill-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">JS</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress3"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">Bootstrap</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress4"></div>
-                        </div>
-                    </div>
-    
+
+            <!-- POPUP  -->
+            <div class="project-popup">
+                <div class="close-btn" id="closePopupBtn" onclick="closeProjectPopup()">
+                    <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect width="64" height="64" fill="url(#pattern0)"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_41_3" transform="scale(0.015625)"/></pattern><image id="image0_41_3" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAKLAAACiwHSfnZ4AAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAADZQTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARy+jrgAAABF0Uk5TAAELGB89XZKYpLzI1dfw8/7mDYvIAAABFklEQVRYw+2XSRKDMBADxb6ZRf//bA6pbASDJrrGtxTTXeDAeAQARTukdeobyKvppzUNbXH/VY8kSW5dqeFlt92JsQaAeuFjpUrhq/QElhooRr7WLBiq+Q0YC7RkyPDBky0Ghgw7ngMSI4Y9z4SVAcMXzxUTdcM3zwk9ZcMBzx7NphqO+K0BOmqGI54dgDJJhkM+ldlLe8NpkWC4KLk0uAXuLbqbJPEnZSKfLZT5nEHnM4YArxpiDSPGK4Zo04zyV4bwwfEDf2bQ+LxB5XMGnbcF7iO4m+j+je6L5L7K7sfkfs5uQ3FbmttU3bbuHizu0fafH7xNssc8d9C0R1172LbHfTtw2JHHDl127LODpx19/fBtxv8b7zCP1WO9MwQAAAAASUVORK5CYII="/></defs></svg>
                 </div>
+                <div class="popup-container">
+                    <img src="" class="proj-img" alt="project-thumbnail">
+    
+                    <div class="popup-text-container">
+                        <div class="">
+                            <div class="logo-text">
+                                <img class="proj-logo" src="" alt="project-logo">
+                                <h3 class="proj-name text-h "></h3>
+                            </div>
+                            <p class="text-p proj-created"></p>
+                            
+                            <p class="text-p proj-desc"></p>
+                        </div>
+    
+                        <a href="" target="_blank" class="project-link proj-link-text"></a>
+                        <div class="btn-container">
+                            <a href="#" target="_blank" class="btn proj-link-btn">Live Link</a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-                <div class="side">
-                    <h3 class="heading">Programming</h3>
-        
-                    <div class="skill-wrapper" >
-                        <div class="skill-topic-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">Python</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress5"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">C</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress6"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M9.4 86.6C-3.1 74.1-3.1 53.9 9.4 41.4s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256 9.4 86.6zM256 416H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">C#</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress7"></div>
-                        </div>
-                    </div>
-    
-                    <div class="skill-wrapper">
-                        <div class="skill-topic-wrapper">
-                            <div class="skill-logo-bg">
-                                <svg class="skill-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"/></svg>
-                            </div>
-                            <h3 class="skill-topic-name">Java</h3>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-anim" id="progress8"></div>
-                        </div>
-                    </div>
-    
+        <hr class="distance">
+
+        <!-- SKILL -->
+        <section id="skill" class="skill-container">
+            <h3 class="g-heading">Skilled at : </h3>
+            <div class="skill-box-container">
+                <div class="skill-box">
+                    <img src="res/logo/skills/html.svg" alt="skill">
+                    <p class="skill-name">HTML</p>
                 </div>
     
+                <div class="skill-box">
+                    <img src="res/logo/skills/css.svg" alt="skill">
+                    <p class="skill-name">CSS</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/js.svg" alt="skill">
+                    <p class="skill-name">JS</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/php.svg" alt="skill">
+                    <p class="skill-name">PHP</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/mysql.svg" alt="skill">
+                    <p class="skill-name">MySQL</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/c.svg" alt="skill">
+                    <p class="skill-name">C</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/csharp.svg" alt="skill">
+                    <p class="skill-name">C#</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/java.svg" alt="skill">
+                    <p class="skill-name">Java</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/python.svg" alt="skill">
+                    <p class="skill-name">Python</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/pptx.svg" alt="skill">
+                    <p class="skill-name">PPTX</p>
+                </div>
+    
+                <div class="skill-box">
+                    <img src="res/logo/skills/figma.svg" alt="skill">
+                    <p class="skill-name">Figma</p>
+                </div>
             </div>
+        </section>
+
+        <hr class="distance">
+
+        <!-- Contact -->
+        <section id="contact" class="contact-container">
             
-            <div class="wrapper-skills">
-                <div class="topic">
-                    <h3>Started Journey</h3>
-                    <p>From 2021</p>
+            <form action="mailto:muhib2929@gmail.com" method="post" autocomplete="off"  target="_blank" enctype="text/plain">
+                <h3 class="g-heading">Contact Me</h3>
+                <div class="inputX">
+                    <input type="text" name="Name" id="name" placeholder="Name" required>
                 </div>
-                <div class="topic">
-                    <h3>Also Interested in...</h3>
-                    <p>Graphics and UI Design</p>
+                <div class="inputX">
+                    <input type="email" name="Email" id="email" placeholder="Email" required>
                 </div>
-                <div class="topic">
-                    <h3>Wish to be</h3>
-                    <p>A Developer</p>
+                <div class="inputX">
+                    <textarea name="message" id="Message" cols="30" rows="10" placeholder="Message..." required></textarea>
                 </div>
-            </div>
-    
-    
-        </section>
-        <!------------Skills ENDS---------->
-
-        <!--------- ---Contact---------->
-        <section class="contact" id="contact">
-            <div class="section-title">
-                <h3 class="title">Contact Me</h3>
-                <hr class="dotted-hr">
-            </div>
-            <div class="main-wrapper">
-    
-                <div class="container-form">
-                    <form action="mailto:muhib2929@gmail.com" method="post" enctype="text/plain">
-                        <label for="name">Name : </label>
-                        <input type="text" id="name" placeholder="Your Name">
-                        <br>
-                        <label for="mail">Email : </label>
-                        <input type="email" id="email" placeholder="someone@example.com">
-                        <label for="name">Your Message :  </label>
-                        <br>
-                        <input class="msgbox"  type="text" id="message" placeholder="Type your Feedback...">
-                        <br>
-                        <button type="submit" class="button">Submit</button>
-                        <button type="reset" class="button" id="reset-btn">Reset</button>
-                    </form>
+                <div class="btn-container">
+                    <input type="submit" value="Send" class="btn">
+                    <input type="reset" value="Clear" class="btnX">
                 </div>
-    
-                <div class="contact-container">
-                    <div class="handle">
+            </form>
 
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Phone</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="tel:+8801717109550" class="handle-link">+880 1717-109550</a>
-                            </div>
-                        </div>
+            
+            <div class="links-container">
 
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Email</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="mailto:muhib2929@gmail.com" class="handle-link">muhib2929@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Whatsapp</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="tel:+8801717109550" target="_blank" class="handle-link">01717-109550</a>
-                            </div>
-                        </div>
-
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Facebook</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="https://www.facebook.com/m.muhib.68442" target="_blank" class="handle-link">fb.com/m.muhib.68442</a>
-                            </div>
-                        </div>
-
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256.55 8C116.52 8 8 110.34 8 248.57c0 72.3 29.71 134.78 78.07 177.94 8.35 7.51 6.63 11.86 8.05 58.23A19.92 19.92 0 0 0 122 502.31c52.91-23.3 53.59-25.14 62.56-22.7C337.85 521.8 504 423.7 504 248.57 504 110.34 396.59 8 256.55 8zm149.24 185.13l-73 115.57a37.37 37.37 0 0 1-53.91 9.93l-58.08-43.47a15 15 0 0 0-18 0l-78.37 59.44c-10.46 7.93-24.16-4.6-17.11-15.67l73-115.57a37.36 37.36 0 0 1 53.91-9.93l58.06 43.46a15 15 0 0 0 18 0l78.41-59.38c10.44-7.98 24.14 4.54 17.09 15.62z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Messenger</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="https://www.messenger.com/t/100015683830018" target="_blank" class="handle-link">Md. Muhibbur Rahman</a>
-                            </div>
-                        </div>
-
-                        <div class="skill-wrapper">
-                            <div class="skill-topic-wrapper">
-                                <div class="handle-logo-bg">
-                                    <svg class="handle-topic-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                                </div>
-                                <h3 class="handle-topic-name">Github</h3>
-                            </div>
-                            <div class="handle-link-div">
-                                <a href="https://github.com/Muhib68442" target="_blank" class="handle-link">Muhib68442</a>
-                            </div>
-                        </div>
+                <a href="mailto:muhib2929@gmail.com" target="_blank" class="link">
+                    <img src="res/logo/social/Email.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>Email</p>
+                        <p class="inner-link">muhib2929@gmail.com</p>
                     </div>
-                </div>
-    
+                </a>
+
+                <a href="tel:+8801717109550" target="_blank" class="link">
+                    <img src="res/logo/social/Smartphone Call.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>Phone</p>
+                        <p class="inner-link">+880 1717 109 550</p>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/m.muhib.68442/" target="_blank" class="link">
+                    <img src="res/logo/social/Facebook.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>Facebook</p>
+                        <p class="inner-link">facebook.com/m.muhib.68442/</p>
+                    </div>
+                </a>
+
+                <a href="tel:+8801717109550" target="_blank" class="link">
+                    <img src="res/logo/social/Whatsapp.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>Whatsapp</p>
+                        <p class="inner-link">+880 1717 109 550</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/muhib68442" target="_blank" class="link">
+                    <img src="res/logo/social/github.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>GitHub</p>
+                        <p class="inner-link">github.com/muhib68442</p>
+                    </div>
+                </a> 
+
+                <a href="https://www.linkedin.com/in/md-muhibbur-rahman-9624642a1/" target="_blank" class="link">
+                    <img src="res/logo/social/Linkedin.svg" alt="social">
+                    <div class="link-text-wrapper">
+                        <p>LinkedIn</p>
+                        <p class="inner-link">Md. Muhibbur Rahman</p>
+                    </div>
+                </a>
+
             </div>
+
         </section>
-        <!------------Contact ENDS---------->
 
-    </section>
-    <!------------CONTENT ENDS---------->
+        <hr class="distance">
 
-    <!------------Redirection---------->
-    <section class="redirection-home">
-        <div class="R-intro-text">
-            <h3>Hi</h3>
-            <h3>Myself Muhib</h3>
-            <h3>Frontend Web Designer</h3>
-            <h3 id="dim-text">Student | Begineer | CSE</p>
-            <div class="explore-btn-div">
-                <a href="redirect/indexR.html">Explore <i class="fa-solid fa-angle-right"></i> </a>
-            </div>
-        </div>
-        <div class="R-resize-text">
-            <p>Portfolio are better in PC Screen. <br>
-                Open this webpage in PC Screen for better view.
-            </p>
-        </div>
-    </section>
+        <!-- Footer -->
+        <footer>
+            <p>Copyright <span> &copy; Md. Muhibbur Rahman </span> <br> 2024 All Rights Reserved</p>
+        </footer>
+
+    </div> 
+    <!-- End of Contents -->
+
 
     <!-- JS -->
-    <script src="script.js"></script>
-
-    <!--FontAwesome-->
-    <script src="https://kit.fontawesome.com/b29a9f7326.js" crossorigin="anonymous"></script>
-
+    <script src="res/js/main.js"></script>
 </body>
 </html>

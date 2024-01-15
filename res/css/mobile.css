@@ -1,0 +1,172 @@
+/**** CSS FOR SMARTPHONE DEVICES ****/
+body{
+
+    background-color: var(--bg);
+}
+.home{
+    background-size: cover;
+    background-position: right;
+    /* filter: blur(3px); */
+    opacity: 40%;
+}
+
+.distance{
+    margin: 25px 0px !important;
+}
+
+
+
+/*** HEADER ***/
+.branding-section{
+    padding-top: 5px;
+    display: none;
+}
+.header-title{
+    font-size: 14px;
+    color: var(--bg);
+}
+header ul{
+    display: none;
+}
+.header-btn-container{
+    display: none;
+}
+
+
+/*** INTRO ***/
+.intro-container{
+    width: 90%;
+}
+.intro-container h3{
+    font-size: 24px;
+}
+.intro-container p{
+    font-size: 14px;
+}
+.intro-container a{
+    font-size: 14px !important;
+}
+
+/*** ABOUT ME ***/
+.about-container{
+    width: 90%;
+    border-radius: 8px;
+}
+.about-wrapper{
+    display: block;
+    padding: 10px;
+}
+.about-wrapper img{
+    display: block;
+    width: 63% !important; 
+    margin: 20px auto;
+}
+.g-heading{
+    font-size: 18px;
+}
+.about-text-container{
+    padding-left: 0px;
+}
+.name{
+    font-size: 28px;
+    text-align: center;
+}
+.name-line{
+    font-size: 18px;
+    text-align: center;
+}
+.desc{
+    font-size: 14px;
+}
+.twoline-container{
+    display: none;
+}
+
+
+/*** PROJECTS ***/ 
+.projects{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color:var(--bg-x); */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    
+}
+.project-popup{
+    padding: 40px 20px;
+    width: 90%;
+}
+.popup-container{
+    display: block;
+}
+.proj-img{
+    width: 80% !important;
+    margin: 15px auto !important;
+    display: block;
+    border-radius: 15px !important;
+}
+.popup-text-container{
+    padding: 10px;
+}
+.proj-created{
+    padding-bottom: 10px;
+}
+.proj-logo{
+    width:  40px !important;
+    height: 40px !important;
+}
+.proj-name{
+    font-size: 20px !important;
+}
+.popup-text-container > .btn-container> .btn{
+    margin-bottom: 40px !important;
+}
+
+.skill-container{
+    width: 90%;
+}
+.skill-box-container{
+    /* flex-direction: column !important; */
+    flex-wrap: wrap;
+}
+
+
+.contact-container{
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column !important;
+}
+form{
+    width: 100%;
+}
+.links-container{
+    padding-top: 15px;
+    width: 100%;
+}
+.link{
+    padding-left: 0px;
+}
+.link img{
+    width: 40px;
+    height: 40px;
+}
+.link p{
+    font-size: 18px;
+    display: none;
+}
+.inner-link{
+    display: block !important;
+}
+
+footer p{
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+}
+footer p br{
+    display: block;
+}
+
