@@ -96,7 +96,7 @@ header ul{
     
 }
 .project-popup{
-    padding: 40px 20px;
+    padding: 20px 20px;
     width: 90%;
 }
 .popup-container{
@@ -120,9 +120,6 @@ header ul{
 }
 .proj-name{
     font-size: 20px !important;
-}
-.popup-text-container > .btn-container> .btn{
-    margin-bottom: 40px !important;
 }
 
 .skill-container{
