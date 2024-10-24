@@ -183,6 +183,7 @@ header ul li a:hover{
     width: 30% !important;
     opacity: 80%;
     transition: 0.1s;
+    height: 100% !important;
 }
 .about-wrapper img:hover{
     opacity: 100%;
