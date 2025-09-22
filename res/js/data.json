@@ -1,0 +1,136 @@
+{
+    "projects" : {
+        "Featured" : {
+            "Rainbow Ride" : {
+                "cover" : "res/cover/rainbowride.png",
+                "desc" : "Clothing Brand Website",
+                "tech" : ["HTML", "Sass", "jQuery", "PHP (OOP)", "MySQL", "Laravel"],
+                "source" : null,
+                "live" : null,
+                "speciality" : "Real-World Project" 
+            },
+            "BookHaven" : {
+                "cover" : "res/cover/bookhaven.png",
+                "desc" : "Library Management System",
+                "tech" : ["HTML", "Sass", "jQuery", "PHP (OOP)", "MySQL"],
+                "source" : "https://github.com/Muhib68442/BookHaven",
+                "live" : "https://muhib68442.github.io/BookHaven/"
+            },
+            "Listy" : {
+                "cover" : "res/cover/listy.png",
+                "desc" : "A lightweight and user-friendly list-making web app.",
+                "tech" : ["HTML", "Sass", "jQuery"],
+                "source" : "https://github.com/muhib68442/Listy",
+                "live" : "https://muhib68442.github.io/Listy/"
+            }
+            
+        },
+
+        "Web" : {
+            "BookHaven" : {
+                "cover" : "res/cover/bookhaven.png",
+                "desc" : "Library Management System",
+                "tech" : ["HTML", "Sass", "jQuery", "PHP (OOP)", "MySQL"],
+                "source" : "https://github.com/Muhib68442/BookHaven",
+                "live" : "https://muhib68442.github.io/BookHaven/"
+            },
+            "UKiit" : {
+                "cover" : "res/cover/ukiit.png",
+                "desc" : "UKiit Official Website",
+                "tech" : ["HTML", "CSS", "JavaScript"],
+                "source" : "https://github.com/Muhib68442/Ukiit",
+                "live" : "https://muhib68442.github.io/Ukiit/"
+            },
+            "Muhib Photography" : {
+                "cover" : "res/cover/muhibphotography.png",
+                "desc" : "Personal Photography Portfolio",
+                "tech" : ["HTML", "CSS"],
+                "source" : "https://github.com/Muhib68442/Muhib-Photography",
+                "live" : "https://muhib68442.github.io/Muhib-Photography"
+            },
+            "LAB IMS" : {
+                "cover" : "res/cover/labims.png",
+                "desc" : "Lab Management System",
+                "tech" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+                "source" : "https://github.com/Muhib68442/LAB-IMS",
+                "live" : "https://muhib68442.github.io/LAB-IMS/"
+            }
+        },
+
+        "App" : {
+            "Listy" : {
+                "cover" : "res/cover/listy.png",
+                "desc" : "A lightweight and user-friendly list-making web app.",
+                "tech" : ["HTML", "Sass", "jQuery"],
+                "source" : "https://github.com/muhib68442/Listy",
+                "live" : "https://muhib68442.github.io/Listy/"
+            },
+            "TrackMint" : {
+                "cover" : "res/cover/trackmint.png",
+                "desc": "An expense tracker web app to record deposits and expenses.",
+                "tech" : ["HTML", "Sass", "jQuery"],
+                "source" : "https://github.com/muhib68442/TrackMint",
+                "live" : "https://muhib68442.github.io/TrackMint/"
+            },
+            "SPI Navigation" : {
+                "cover" : "res/cover/spinav.png",
+                "desc" : "Lost in SPI Campus ? No More !",
+                "tech" : ["React Native"],
+                "source" : null,
+                "live" : "https://spinav.netlify.app/"
+            }
+        },
+
+        "Others" : {
+            "Project C" : {
+                "cover" : "res/cover/projectc.png",
+                "desc" : "Basic Operations with C Language.",
+                "tech" : ["C"],
+                "source" : "https://github.com/Muhib68442/ProjectC",
+                "live" : "https://muhib68442.github.io/ProjectC/"
+            },
+            "UKiit Care" : {
+                "cover" : "res/cover/ukiit.png",
+                "desc" : "Optimize your Windows PC with few clicks.",
+                "tech" : ["C", "CMD"],
+                "source" : "https://github.com/Muhib68442/UKiit",
+                "live" : "https://muhib68442.github.io/UKiit/"
+            },
+            "Xtart" : {
+                "cover" : "res/cover/xtart.png",
+                "desc" : "XAMPP - PHP, MySQL Starter",
+                "tech" : ["C", "CMD"],
+                "source" : "https://github.com/Muhib68442/Xtart",
+                "live" : "https://muhib68442.github.io/Xtart/"
+            },
+            "QuickTab" : {
+                "cover" : "res/cover/quicktab.png",
+                "desc" : "Your redefined browser homepage",
+                "tech" : ["HTML", "Sass", "jQuery"],
+                "source" : "https://github.com/Muhib68442/QuickTab",
+                "live" : "https://muhib68442.github.io/QuickTab/"
+            }
+        }
+    },
+
+    "skills" : {
+        "Frontend" : ["HTML", "CSS", "Sass", "Tailwind"],
+        "Javascript" : ["JavaScript", "jQuery", "AJAX", "JSON"], 
+        "Version Control" : ["Git", "GitHub"],
+        "Backend" : ["PHP", "MySQL", "Laravel"], 
+        "Programming" : ["C/C++", "Python"],
+        "Others" : ["Figma", "Slides"]
+    }, 
+
+    "contact" : {
+        "linkedin" : "https://www.linkedin.com/in/muhib44/",
+        "github" : "https://github.com/muhib68442/", 
+        "facebook" : "https://www.facebook.com/m.muhib.68442", 
+        "whatsapp" : "https://api.whatsapp.com/send?phone=8801717109550&text=", 
+        "telegram" : "", 
+        "phone" : "+8801717109550", 
+        "mail" : "muhib2929@gmail.com",
+        "cv" : "../docs/cv.pdf",
+        "resume" : "../docs/resume.pdf"
+    }
+}

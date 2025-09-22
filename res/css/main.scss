@@ -1,0 +1,664 @@
+// MAIN CSS
+
+// VARIABLES
+$bg: #fafafa;
+$theme: #eb5837;
+$secondary: #d9d9d9;
+$text-primary: #333333;
+$text-secondary: #444444;
+$text-alt: #ffffff;
+$text-alts: #d1d1d1;
+
+// MIXIN
+@mixin flex($direction, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin btn-primary {
+    background-color: transparent;
+    color: $text-primary;
+    border: 2px solid $text-primary;
+    padding: 6px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family : regular, sans-serif;
+    font-size : 16px;
+    &:hover {
+        background-color: $theme;
+        color: $text-alt;
+        border: 2px solid transparent;
+    }
+    @content;
+}
+
+@mixin header {
+    header {
+        padding: 60px;
+        @include flex(flex, space-between, center, 0);
+
+        h3 {
+            font-family: bold, sans-serif;
+            font-size: 46px;
+            color: $theme;
+        }
+
+        a {
+            text-decoration: none;
+            @include btn-primary();
+        }
+    }
+
+    @content;
+}
+
+// FONTS
+@font-face {
+    font-family: "bold";
+    src: url("../font/bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "regular";
+    src: url("../font/regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "light";
+    src: url("../font/light.ttf") format("truetype");
+}
+
+// DEFAULTS
+.selected{
+    background-color: $theme !important;
+    color: $text-alt !important;
+    border-color : $theme !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+/* STYLE SCROLLBAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: $bg;
+}
+::-webkit-scrollbar-thumb {
+    background: $text-secondary;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: darken($theme, 20%);
+}
+
+// UNCOMMENT FOR STICKY SCROLL
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   scroll-behavior: smooth;
+// }
+
+// main {
+//   height: 100vh;
+//   overflow-y: scroll;
+//   scroll-snap-type: y mandatory;
+// }
+
+// section {
+//   height: 100vh;
+//   scroll-snap-align: start;
+// }
+
+// CSS
+
+/////////////////// LANDING //////////////////////////
+#landing {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    position : relative;
+    .hero {
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%) scale(1.2);
+
+        h3 {
+            font-size: 40px;
+            color: $text-alt;
+            font-family: bold, sans-serif;
+        }
+
+        p {
+            font-size: 20px;
+            color: lighten($text-secondary, 20%);
+            font-family: regular, sans-serif;
+            margin : 6px 4px;
+        }
+
+        div {
+            @include flex(row, flex-start, center, 20px);
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                font-family: regular, sans-serif;
+
+                &:nth-child(1) {
+                    @include btn-primary(){
+                        color: $text-alt;
+                        border-color: $text-alt;
+                        // background-color: rgba($secondary, 0.7);
+                        background-color: transparent;
+                    };
+                }
+
+                &:nth-child(2) {
+                    @include btn-primary() {
+                        background-color: transparent;
+                        color: $text-alts;
+                        border-color: $text-alts;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////// ABOUT //////////////////////////
+
+#about {
+    height: 100vh;
+    width: 100%;
+    background-color: $bg;
+    // padding : 0px 40px;
+    @include header();
+
+    .about-container {
+        @include flex(row, center, center, 100px);
+
+        .profile-container {
+            width: 280px;
+            height: 360px;
+            position: relative;
+            // margin: auto;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 250px;
+                // height: 200px;
+                z-index: 10;
+                object-fit: cover;
+            }
+
+            .top-left,
+            .bottom-right {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                // border-radius: 10px;
+                z-index: 1;
+                // box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            }
+
+            .top-left {
+                top: 0;
+                left: 0;
+                background-color: $theme;
+            }
+
+            .bottom-right {
+                bottom: 0;
+                right: 0;
+                background-color: $secondary;
+            }
+        }
+
+        .about-detail-container {
+            width: 40%;
+            @include flex(column, flex-start, flex-start, 20px);
+
+            h3 {
+                font-family: bold, sans-serif;
+                font-size: 40px;
+                color: $text-primary;
+                user-select: text;
+            }
+
+            p {
+                font-family: regular, sans-serif;
+                font-size: 22px;
+                color: $text-secondary;
+                user-select: text;
+            }
+
+            .info-container {
+                width: 100%;
+                margin-top: 10px;
+                @include flex(row, space-between, center, 0px);
+
+                div {
+                    @include flex(column, center, center, 4px);
+
+                    p {
+                        font-family: regular, sans-serif;
+                        font-size: 20px;
+                        color: $text-secondary;
+                    }
+
+                    p:nth-child(1) {
+                        font-family: bold, sans-serif;
+                        font-size: 22px;
+                        color: $text-secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////// PROJECTS //////////////////////////
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: $secondary;
+}
+
+#project {
+    width: 100%;
+    height: 100vh;
+    background-color: $bg;
+
+    @include header() {
+        div {
+            a {
+                margin-left: 10px;
+
+                @include btn-primary() {
+                    &:hover {
+                        background-color: $theme !important;
+                        color: $text-alt;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-container {
+        width : 90%;
+        margin: 0 auto;
+        @include flex(row, flex-start, center, 50px);
+        flex-wrap: wrap;
+
+        .project {
+            border-radius: 10px;
+            position: relative;
+            width: 300px;
+            height: 200px;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
+            img {
+                border-radius: 10px;
+                width: 300px;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .project-details {
+                border-radius: 10px;
+                box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+                position: absolute;
+                top: 0;
+                left: 0;
+                backdrop-filter: blur(4px);
+                padding: 14px;
+
+                max-width : 300px;
+                max-height : 200px;
+                
+                background-color: rgba($text-primary, 0.7);
+                @include flex(column, space-between, flex-start, 10px);
+                
+                display: none;
+                h3 {
+                    font-family: bold, sans-serif;
+                    font-size: 28px;
+                    color: $text-alt;
+                    user-select: text;
+                }
+
+                p {
+                    font-family: regular, sans-serif;
+                    font-size: 18px;
+                    color: $text-alts;
+                    user-select: text;
+                }
+
+                ul {
+
+                    list-style-type: none;
+                    @include flex(row, flex-start, center, 4px);
+                    flex-wrap: wrap;
+
+                    li {
+                        border: 2px solid $text-alts;
+                        padding: 1px 8px;
+                        border-radius: 50px;
+                        font-family: regular, sans-serif;
+                        font-size: 16px;
+                        color: $text-alts;
+                        user-select: text;
+                    }
+                }
+
+                div {
+                    font-family: regular;
+                    color: $text-primary;
+                    @include flex(row, flex-start, center, 6px);
+
+                    a:nth-child(1) {
+                        @include btn-primary(){
+                            background-color: transparent;
+                            color : $text-alt;
+                            border-color : $text-alt;
+                            font-family : bold, sans-serif; ;
+                        };
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        @include btn-primary() {
+                            background-color: transparent;
+                            color : $text-alt;
+                            border-color : $text-alt;
+                            &:hover {
+                                background-color: $theme !important;
+                                color: $text-alt;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+/////////////////// SKILL //////////////////////////
+
+#skill{
+    @include header();
+    width: 100%;
+    height: 100vh;
+    background-color: $bg;
+
+    .skill-container{
+        width : 90%;
+        margin: 0 auto;
+        // width: 100%;
+
+        .skill-topic{
+            @include flex(row, flex-start, center, 10px);
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+
+            .skill-head{
+                width : 20%;
+                @include flex(row, flex-start, center, 10px);
+                span{
+                    display: inline-block;
+                    width:  10px;
+                    height: 10px;
+                    background-color: darken($secondary, 10%);
+                    border-radius: 50%;
+                }
+                h3{
+                    font-family : bold, sans-serif;
+                    font-size: 26px;
+                    color: $text-secondary;
+                }
+            }
+
+            
+
+            .skillpill-container{
+                @include flex(row, flex-start, center, 20px);
+                
+                .skillpill{
+                    display: flex;
+                    align-items: center;
+                    gap : 20px;
+                    span{
+                        display: inline-block;
+                        width:  20px;
+                        height: 20px;
+                        background-color: darken($secondary, 10%);
+                        border-radius: 50%;
+                    }
+                    background-color: $secondary;
+                    padding: 8px 26px;
+                    border-radius: 50px;
+                    font-family: regular, sans-serif;
+                    font-size: 22px;
+                    color: $text-primary;
+                    transition : 0.1s ease-in-out;
+                    &:hover{
+                        // cursor: pointer;
+                        transition: 0.1s ease-in-out;
+                        background-color: $theme;
+                        color : $text-alt;
+                        span{
+                            background-color: lighten($theme, 30%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/////////////////// CONTACT //////////////////////////
+
+#contact{
+    @include header();
+    width: 100%;
+    height: 100vh;
+    background-color: $bg;
+
+    .contact-container{
+        @include flex(row, space-evenly, flex-start, 0px);
+        
+        .contact-form{
+            form{
+                margin : 0 auto;
+                @include flex(column, flex-start, flex-start, 10px);
+
+                input{
+                    width: 100%;
+                    padding : 8px 16px;
+                    border : 2px solid transparent;
+                    border-radius: 10px;
+                    background-color: $secondary;
+                    color : $text-primary;
+                    font-size: 20px;
+                    font-family : bold, sans-serif;
+                    transition : 0.1s;
+                    &:hover{
+                        transition : 0.1s;
+                        border-color : $theme;
+                    }
+                    &:focus{
+                        transition : 0.1s;
+                        background-color: transparent;
+                        border-color : $theme;
+                    }
+                }
+                textarea{
+                    transition : 0.1s;
+                    color : $text-primary;
+                    width: 100%;
+                    padding : 8px 16px;
+                    border : 2px solid transparent;
+                    border-radius: 10px;
+                    background-color: $secondary;
+                    color : $text-primary;
+                    font-size: 20px;
+                    font-family : regular, sans-serif;
+                    resize: none;
+                    height : 200px;
+                    &:hover{
+                        transition : 0.1s;
+                        border-color : $theme;
+                    }
+                    &:focus{
+                        transition : 0.1s;
+                        background-color: transparent;
+                        border-color : $theme;
+                    }
+                }
+                button{
+                    @include btn-primary(){
+                        background-color: $secondary;
+                        border-color: transparent;
+
+                        &:hover{
+                            background-color: $theme;
+                            transition : 0.1s;
+                        }
+                    };
+                }
+            }
+        }
+
+        .contact-button-container{
+
+            @include flex(column, center, center, 20px);
+            // display: grid;
+            // grid-template-columns: repeat(3, 1fr); 
+            gap: 20px;
+
+            div{
+                @include flex(row, center, center, 20px);
+                .contact-btn{
+                    cursor : pointer;
+                    width : 80px;
+                    height : 80px;
+                    background-color: $secondary;
+                    border-radius: 10px;
+                    padding : 10px;
+                    transition : 0.1s;
+                    @include flex(row, center, center, 0px);
+                    
+                    svg{
+                        width : 40px;
+                    }
+    
+                    &:hover{
+                        transition : 0.1s;
+                        background-color: $theme;
+                        svg{
+                            path{
+                                fill : $text-alt;
+                            }
+                        }
+                    }
+    
+                }
+            }
+
+            .docs-btn-container{
+                a{
+                    cursor : pointer !important;
+                    text-decoration: none;
+                    font-family: regular, sans-serif;
+                    @include btn-primary(){
+                        text-align: center;
+                        width : 130px;
+                        background-color: $secondary;
+                        border-color : $secondary;
+
+                        &:hover{
+                            a{
+                                color : $text-alt;
+                            }
+                            border-color : transparent;
+                            background-color: $theme;
+                        }
+                    }
+                    // padding : 8px 12px !important;
+                }
+            }
+            
+            #emailBtn{
+                cursor : pointer;
+                background-color: $secondary;
+                border-radius: 10px;
+                padding : 10px;
+                transition : 0.1s;
+                @include flex(row, center, center, 0px);
+                width : 100%;
+                text-decoration: none;
+                p{
+                    margin-left: 20px;
+                    color : $text-primary;
+                    font-family : regular, sans-serif;
+                    font-size: 18px;
+                }
+                svg{
+                    width : 40px;
+                }
+                
+                &:hover{
+                    transition : 0.1s;
+                    background-color: $theme;
+                    p{
+                        color : $text-alt;
+                    }
+                    svg{
+                        path{
+                            fill : $text-alt;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+/////////////////// FOOTER //////////////////////////
+footer{
+    width : 100%;
+    background-color: $theme;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding : 4px 0px;
+    p{
+        color : $text-alt;
+        font-family : regular, sans-serif;
+        font-size: 18px;
+        text-align: center;
+    }
+}
