@@ -1,12 +1,6 @@
-
+// MAIN SCRIPT
 $(document).ready(function() {
     // jQuery STARTS ------------------------------------------------
-    
-    // DUMMY DATA GENERATE
-    // for (let i = 0; i < 6; i++) {
-    //     let html = $(".project").first().clone(true);
-    //     $(".project-container").append(html);
-    // }
 
 
     // HOVER ON PROJECT TO VIEW DETAILS 
@@ -14,102 +8,66 @@ $(document).ready(function() {
         $(this).find(".project-details")
         .fadeIn(200)
         .css("display", "flex")
-        .css("min-width", "300px")
-        .css("min-height", "200px");
     })
-
     $(document).on('mouseleave', '.project', function(){
         $(this).find(".project-details").fadeOut(200);
     })
 
-
-
-    // function fetchProjects(){
-    //     $.ajax({
-    //         url : "/res/js/data.json",
-    //         type : "GET",
-    //         dataType : "json",
-    //         success : function(data){
-    //             $.each(data.projects, function(index, project) {
-    //                 let html = `
-    //                     <div class="project">
-    //                         <img src="${project.img}" alt="${project.name}">
-    //                         <div class="project-details">
-    //                             <h3>${project.name}</h3>
-    //                             <p>${project.desc}</p>
-    //                             <ul>
-    //                                 ${project.stack.map(stack => `<li>${stack}</li>`).join('')}
-    //                             </ul>
-    //                             <div>
-    //                                 <a href="${project.live}">Live</a>
-    //                                 <a href="${project.source}">Source</a>
-    //                             </div>
-    //                         </div>
-    //                     </div>
-    //                 `;
-    //                 $(".project-container").append(html);
-    //             })
-    //         }
-    //     })
-    // }
-    // fetchProjects();
-
-
-// RENDER PROJECT CATEGORIES
- $.ajax({
-    url : "/res/js/data.json",
-    type : "GET",
-    dataType : "json",
-    success : function(data){
-        Object.keys(data.projects).forEach(key => {
-            let btn = "<a>" + key + "</a>"
-            $("#projectCategoryBtnContainer").append(btn);
-        });
-        $("#projectCategoryBtnContainer").children().first().addClass("selected");
-    }
-});
-
-// SHOW DATA OF SELECTED CATEGORY
-$("#projectCategoryBtnContainer").on("click", "a", function(){
-    $(this).siblings().removeClass("selected");
-    $(this).addClass("selected");
-    let key = $(this).text();
-    $(".project").hide();
-    fetchProject(key);
-})
-
-// SHOW FEATURED BY DEFAULT 
-fetchProject("Featured");
-function fetchProject(key){
+    // RENDER PROJECT CATEGORIES
     $.ajax({
         url : "/res/js/data.json",
         type : "GET",
         dataType : "json",
         success : function(data){
-            let projects = data.projects[key];
-            $(".project").remove();
-            $.each(projects, function(index, project) {
-                let html = `
-                    <div class="project">
-                        <img src="${project.cover}" alt="${project.name}">
-                        <div class="project-details">
-                            <h3>${index}</h3>
-                            <p>${project.desc}</p>
-                            <ul>
-                                ${project.tech.map(tech => `<li>${tech}</li>`).join('')}
-                            </ul>
-                            <div>
-                                <a href="${project.live}">Live</a>
-                                <a href="${project.source}">Source</a>
+            Object.keys(data.projects).forEach(key => {
+                let btn = "<a>" + key + "</a>"
+                $("#projectCategoryBtnContainer").append(btn);
+            });
+            $("#projectCategoryBtnContainer").children().first().addClass("selected");
+        }
+    });
+
+    // SHOW DATA OF SELECTED CATEGORY
+    $("#projectCategoryBtnContainer").on("click", "a", function(){
+        $(this).siblings().removeClass("selected");
+        $(this).addClass("selected");
+        let key = $(this).text();
+        $(".project").hide();
+        fetchProject(key);
+    })
+
+    // SHOW FEATURED BY DEFAULT 
+    fetchProject("Featured");
+    function fetchProject(key){
+        $.ajax({
+            url : "/res/js/data.json",
+            type : "GET",
+            dataType : "json",
+            success : function(data){
+                let projects = data.projects[key];
+                $(".project").remove();
+                $.each(projects, function(index, project) {
+                    let html = `
+                        <div class="project">
+                            <img src="${project.cover}" alt="${project.name}">
+                            <div class="project-details">
+                                <h3>${index}</h3>
+                                <p>${project.desc}</p>
+                                <ul>
+                                    ${project.tech.map(tech => `<li>${tech}</li>`).join('')}
+                                </ul>
+                                <div>
+                                    <a href="${project.live}">Live</a>
+                                    <a href="${project.source}">Source</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                `;
-                $(".project-container").append(html).hide().fadeIn(100);
-            })
-        }
-    })
-}
+                    `;
+                    $(".project-container").append(html).hide().fadeIn(100);
+                })
+            }
+        })
+    }
 
 
 
@@ -182,9 +140,36 @@ function fetchProject(key){
 
 
 
+    // THEME CHANGE BUTTON
+    $(".theme").click(function(){
+        $("body").toggleClass("dark");
+
+        // DIM THE BG-IMG
+        $("#landing").css("filter", "brightness(0.7)");
+        if(!$("body").hasClass("dark")){
+            $("#landing").css("filter", "brightness(1)");
+        }
+        
+    });
+
+
 
     // FOOTER COPYRIGHT YEAR
     $("footer p span").innerHTML = new Date().getFullYear();
 
+    // SCROLL TO TOP
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $("#scrollToTop").fadeIn();
+        } else {
+            $("#scrollToTop").fadeOut();
+        }
+    });
 
-})
+    $("#scrollToTop").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+
+
+}) // jQuery ENDS ---------------------------------------
