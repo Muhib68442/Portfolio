@@ -2,6 +2,8 @@
 $(document).ready(function() {
     // jQuery STARTS ------------------------------------------------
 
+    let json_url = 'https://muhib68442.github.io/Portfolio/res/js/data.json';
+
 
     // HOVER ON PROJECT TO VIEW DETAILS 
     $(document).on('mouseenter', '.project', function(){
@@ -15,7 +17,7 @@ $(document).ready(function() {
 
     // RENDER PROJECT CATEGORIES
     $.ajax({
-        url : "/res/js/data.json",
+        url : json_url,
         type : "GET",
         dataType : "json",
         success : function(data){
@@ -40,7 +42,7 @@ $(document).ready(function() {
     fetchProject("Featured");
     function fetchProject(key){
         $.ajax({
-            url : "/res/js/data.json",
+            url : json_url,
             type : "GET",
             dataType : "json",
             success : function(data){
@@ -75,7 +77,7 @@ $(document).ready(function() {
     function fetchSkills(){
         // CALL TO JSON
         $.ajax({
-            url : "/res/js/data.json", 
+            url : json_url, 
             type : "GET", 
             dataType : "json", 
             success : function(data){
@@ -115,7 +117,7 @@ $(document).ready(function() {
     let phone = "";
     function fetchContact(){
         $.ajax({
-            url : "/res/js/data.json", 
+            url : json_url, 
             type : "GET", 
             dataType : "json", 
             success: function(data){
