@@ -52,8 +52,8 @@
                 "cover" : "res/cover/labims.png",
                 "desc" : "Lab Management System",
                 "tech" : ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-                "source" : "https://github.com/Muhib68442/LAB-IMS",
-                "live" : "https://muhib68442.github.io/LAB-IMS/"
+                "source" : null,
+                "live" : "https://muhib68442.github.io/IMS-Showcase/pages/project-details.html?project=0"
             }
         },
 
