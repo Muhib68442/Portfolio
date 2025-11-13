@@ -115,9 +115,9 @@
 
     "skills" : {
         "Frontend" : ["HTML", "CSS", "Sass", "Tailwind"],
-        "Javascript" : ["JavaScript", "jQuery", "AJAX", "JSON"], 
-        "Version Control" : ["Git", "GitHub"],
+        "Javascript" : ["JavaScript", "jQuery", "AJAX", "JSON", "Vue.js"], 
         "Backend" : ["PHP", "MySQL", "Laravel"], 
+        "Version Control" : ["Git", "GitHub"], 
         "Programming" : ["C/C++", "Python"],
         "Others" : ["Figma", "Slides"]
     }, 
