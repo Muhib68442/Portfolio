@@ -118,7 +118,7 @@
         "JavaScript" : ["JavaScript", "jQuery", "AJAX", "JSON", "Vue.js"], 
         "Backend" : ["PHP", "MySQL", "Laravel"], 
         "Version Control" : ["Git", "GitHub"], 
-        "Wordpress": ["Wordpress", "Elementor", "Woocommerce"],
+        "WordPress": ["WordPress", "Elementor", "WooCommerce"],
         "Programming" : ["C/C++", "Python"],
         "Others" : ["Figma", "Slides"]
     }, 
