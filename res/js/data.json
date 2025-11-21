@@ -113,24 +113,25 @@
         }
     },
 
-    "skills" : {
+    "skills": {
         "Frontend" : ["HTML", "CSS", "Sass", "Tailwind"],
-        "Javascript" : ["JavaScript", "jQuery", "AJAX", "JSON", "Vue.js"], 
+        "JavaScript" : ["JavaScript", "jQuery", "AJAX", "JSON", "Vue.js"], 
         "Backend" : ["PHP", "MySQL", "Laravel"], 
         "Version Control" : ["Git", "GitHub"], 
+        "Wordpress": ["Wordpress", "Elementor", "Woocommerce"],
         "Programming" : ["C/C++", "Python"],
         "Others" : ["Figma", "Slides"]
     }, 
 
-    "contact" : {
-        "linkedin" : "https://www.linkedin.com/in/muhib44/",
-        "github" : "https://github.com/muhib68442/", 
-        "facebook" : "https://www.facebook.com/m.muhib.68442", 
-        "whatsapp" : "https://api.whatsapp.com/send?phone=8801717109550&text=", 
-        "telegram" : "", 
-        "phone" : "+8801717109550", 
-        "mail" : "muhib2929@gmail.com",
-        "cv" : "../docs/cv.pdf",
-        "resume" : "../docs/resume.pdf"
+    "contact": {
+        "linkedin": "https://www.linkedin.com/in/muhib44/",
+        "github": "https://github.com/muhib68442/", 
+        "facebook": "https://www.facebook.com/m.muhib.68442", 
+        "whatsapp": "https://api.whatsapp.com/send?phone=8801717109550&text=", 
+        "telegram": "", 
+        "phone": "+8801717109550", 
+        "mail": "muhib2929@gmail.com",
+        "cv": "../docs/cv.pdf",
+        "resume": "../docs/resume.pdf"
     }
 }
